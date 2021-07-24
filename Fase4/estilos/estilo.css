@@ -1,0 +1,77 @@
+header{
+    color: salmon; font-size: 30px;text-align: center;background-color:rgb(177, 212, 243);
+    padding: 10px;
+}
+nav{
+background-color: rgb(245, 237, 242);
+padding: 10px;
+}
+div{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+section{
+grid-column: 1/4 ;
+text-align: justify;
+background-color: antiquewhite;
+}
+aside{
+grid-column: 4/5;
+text-align: justify;
+background-color: beige;
+}
+footer{
+    background-color: beige;
+}
+
+.clase_menu a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color:blue;
+    background:rgb(177, 212, 243);
+    height: 50px;
+    text-decoration: none;
+}
+
+.clase_menu a:hover {
+    background:rgb(167, 167, 248);
+    color: #fff;
+
+}
+
+.clase_menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.clase_menu li {
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+
+.clase_menu li:hover .dropdown-1>li {
+    top: 0;
+    display: block;
+}
+
+.dropdown-1 li {
+    display: none;
+    position: relative;
+}
+
+.dropdown-1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dropdown-1 li:hover {
+    display: block;
+}
+body{
+    background-color: antiquewhite;
+}
